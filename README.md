@@ -2,7 +2,7 @@
 
 Aplikasi web interaktif untuk mengestimasi dana pensiun seseorang berdasarkan profil keuangan saat ini, menggunakan model Machine Learning (XGBoost). Dibangun sebagai Capstone Project.
 
-🔗 **Live demo:** _(isi link Streamlit Cloud kamu di sini setelah deploy)_
+🔗 **Live demo:** [_(Live Demo)_](https://prediksi-dana-pensiun.streamlit.app)
 📓 **Notebook training:** [`notebooks/Model.ipynb`](notebooks/Model.ipynb)
 
 ---
