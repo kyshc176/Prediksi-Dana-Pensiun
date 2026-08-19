@@ -16,7 +16,7 @@ def load_artifacts():
     base_dir = Path(__file__).resolve().parent
 
     scaler = joblib.load(base_dir / "scaler.pkl")
-    model = joblib.load(base_dir / "xgb_model.pkl")
+    model = joblib.load(base_dir / "xgboost_model.pkl")
 
     return scaler, model
 
