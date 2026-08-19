@@ -11,8 +11,8 @@ st.set_page_config(page_title="Prediksi Dana Pensiun", page_icon="💰", layout=
 # ---------------------------------------------------------------------------
 @st.cache_resource
 def load_artifacts():
-    scaler = joblib.load(streamlit_appp/"scaler.pkl")
-    model = joblib.load(streamlit_appp/"xgb_model.pkl")
+    scaler = joblib.load("scaler.pkl")
+    model = joblib.load("xgb_model.pkl")
     return scaler, model
 
 scaler, model = load_artifacts()
