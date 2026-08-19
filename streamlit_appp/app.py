@@ -9,10 +9,15 @@ st.set_page_config(page_title="Prediksi Dana Pensiun", page_icon="💰", layout=
 # ---------------------------------------------------------------------------
 # Load model & scaler (di-cache biar cuma di-load sekali per sesi)
 # ---------------------------------------------------------------------------
+from pathlib import Path
+
 @st.cache_resource
 def load_artifacts():
-    scaler = joblib.load("scaler.pkl")
-    model = joblib.load("xgb_model.pkl")
+    base_dir = Path(__file__).resolve().parent
+
+    scaler = joblib.load(base_dir / "scaler.pkl")
+    model = joblib.load(base_dir / "xgb_model.pkl")
+
     return scaler, model
 
 scaler, model = load_artifacts()
